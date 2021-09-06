@@ -36,7 +36,8 @@ localport=8443
 remoteport=443
 declare -i bandwidth
 declare -i speed
-read -p "请设置期望到 CloudFlare 服务器的带宽大小(单位 Mbps):" bandwidth
+#下面 bandwidth 参数为带宽大小，请自行设置，默认 50
+bandwidth=50
 speed=bandwidth*128*1024
 starttime=`date +'%Y-%m-%d %H:%M:%S'`
 while true
